@@ -1,7 +1,7 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  anim_cnt.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      26/01/2022
 -----------------------------
 
@@ -16,7 +16,7 @@ ENTITY anim_cnt IS
     cnt     : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
 END anim_cnt;
 
-ARCHITECTURE anim OF anim_cnt IS
+ARCHITECTURE rtl OF anim_cnt IS
 
   TYPE states IS (e1, e2, e3, e4);
 
@@ -84,4 +84,4 @@ BEGIN
          '0';
   cnt <= cnt_s;
 
-END anim;
+END rtl;

@@ -6,7 +6,7 @@ USE ieee.std_logic_unsigned.ALL;
 ENTITY tb_multiplex IS
 END ENTITY;
 
-ARCHITECTURE modele_test OF tb_multiplex IS
+ARCHITECTURE rtl OF tb_multiplex IS
   COMPONENT multiplex
     PORT (
       e0, e1, sel : IN  STD_LOGIC;

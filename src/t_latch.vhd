@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   T-latch using a D-latch
+-- File name:     t_latch.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -8,8 +21,8 @@ ENTITY t_latch IS
     Q     : OUT STD_LOGIC);
 END t_latch;
 
-ARCHITECTURE logique OF t_latch IS
-  COMPONENT d_latch_2 IS
+ARCHITECTURE rtl OF t_latch IS
+  COMPONENT d_latch_v2 IS
     PORT (
       clk   : IN  STD_LOGIC;
       ena   : IN  STD_LOGIC;
@@ -20,11 +33,11 @@ ARCHITECTURE logique OF t_latch IS
   END COMPONENT;
   SIGNAL tmp : STD_LOGIC;
 BEGIN
-  u1 : d_latch_2 PORT MAP(
+  u1 : d_latch_v2 PORT MAP(
     clk   => clk,
     ena   => '1',
     D     => tmp,
     RESET => reset,
     Q     => Q,
     notQ  => tmp);
-END logique;
+END rtl;

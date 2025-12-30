@@ -10,15 +10,15 @@ ENTITY demi_add_2 IS
   );
 END demi_add_2;
 
-ARCHITECTURE arch_struct OF demi_add_2 IS
-  COMPONENT xor_2 IS
+ARCHITECTURE rtl OF demi_add_2 IS
+  COMPONENT xor2 IS
     PORT (
       i1 : IN  STD_LOGIC;
       i2 : IN  STD_LOGIC;
       o  : OUT STD_LOGIC
     );
   END COMPONENT;
-  COMPONENT and_2 IS
+  COMPONENT and2 IS
     PORT (
       x1 : IN  STD_LOGIC;
       x2 : IN  STD_LOGIC;
@@ -26,14 +26,14 @@ ARCHITECTURE arch_struct OF demi_add_2 IS
     );
   END COMPONENT;
 BEGIN
-  mon_inst1 : xor_2 PORT MAP(
+  mon_inst1 : xor2 PORT MAP(
     i1 => a,
     i2 => b,
     o  => r
   );
-  ton_inst2 : and_2 PORT MAP(
+  ton_inst2 : and2 PORT MAP(
     x1 => a,
     x2 => b,
     y  => c_out
   );
-END arch_struct;
+END rtl;

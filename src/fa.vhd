@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Simple 1bit Full Adder
+-- File name:     fa.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
@@ -11,9 +24,9 @@ ENTITY fa IS
   );
 END fa;
 
-ARCHITECTURE arch_flot OF fa IS
+ARCHITECTURE rtl OF fa IS
 
 BEGIN
   sum   <= a XOR b XOR c_in;
   c_out <= (a AND b) OR (a AND c_in) OR (c_in AND b) OR (a AND b AND c_in);
-END arch_flot;
+END rtl;

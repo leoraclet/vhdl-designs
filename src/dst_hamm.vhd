@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Computes hamming distance between two 4-bits inputs
+-- File name:     dst_hamm.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -8,7 +21,7 @@ ENTITY dst_hamm IS
     S  : OUT STD_LOGIC_VECTOR(2 DOWNTO 0));
 END dst_hamm;
 
-ARCHITECTURE logique OF dst_hamm IS
+ARCHITECTURE rtl OF dst_hamm IS
   COMPONENT pds_hamm IS
     PORT (
       E : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -23,4 +36,4 @@ BEGIN
 
   S <= HW1 XOR HW2;
 
-END logique;
+END rtl;

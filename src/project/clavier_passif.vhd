@@ -13,7 +13,7 @@ ENTITY clavier_passif IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavior OF clavier_passif IS
+ARCHITECTURE rtl OF clavier_passif IS
   TYPE state_type IS (e0, e1, e2);
   SIGNAL state : state_type;
   SIGNAL cl    : STD_LOGIC_VECTOR(3 DOWNTO 0);

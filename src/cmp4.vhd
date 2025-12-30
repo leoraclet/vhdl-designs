@@ -1,16 +1,29 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   4-bit comparator
+-- File name:     cmp4.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY comparateur IS
+ENTITY cmp4 IS
   PORT (
     E1    : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
     E2    : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
     S_SUP : OUT STD_LOGIC;
     S_EQU : OUT STD_LOGIC;
     S_INF : OUT STD_LOGIC);
-END comparateur;
+END cmp4;
 
-ARCHITECTURE logique OF comparateur IS
+ARCHITECTURE rtl OF cmp4 IS
 BEGIN
   PROCESS (E1, E2)
   BEGIN
@@ -28,4 +41,4 @@ BEGIN
       S_EQU <= '0';
     END IF;
   END PROCESS;
-END logique;
+END rtl;

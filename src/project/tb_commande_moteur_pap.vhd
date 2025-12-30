@@ -6,7 +6,7 @@ USE ieee.std_logic_unsigned.ALL;
 ENTITY tb_commande_moteur_pap IS
 END ENTITY;
 
-ARCHITECTURE test OF tb_commande_moteur_pap IS
+ARCHITECTURE rtl OF tb_commande_moteur_pap IS
   COMPONENT commande_moteur_pap
     PORT (
       clk                : IN  STD_LOGIC;

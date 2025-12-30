@@ -10,7 +10,7 @@ ENTITY registre_decalage IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavioral OF registre_decalage IS
+ARCHITECTURE rtl OF registre_decalage IS
   COMPONENT bascule_d
     PORT (
       d, clk, reset : IN  STD_LOGIC;

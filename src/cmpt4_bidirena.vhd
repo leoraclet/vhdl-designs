@@ -1,9 +1,16 @@
----------------------------------
--- IUT Saint-Etienne
--- Filename:  cmpt4_bidirena.vhd
--- Edited by: Leo Raclet
--- Date:      25/01/2022
----------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Bidirectionnal 4-bits counter with asynchronous reset
+-- File name:     cmpt4_bidirena.vhd
+-- Description:   .
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          25/01/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -18,7 +25,7 @@ ENTITY cmpt4_bidirena IS
     cmpto : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
 END cmpt4_bidirena;
 
-ARCHITECTURE cmpt OF cmpt4_bidirena IS
+ARCHITECTURE rtl OF cmpt4_bidirena IS
   SIGNAL s : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
 
 BEGIN
@@ -47,4 +54,4 @@ BEGIN
     cmpto <= s;
 
   END PROCESS;
-END cmpt;
+END rtl;

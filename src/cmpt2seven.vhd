@@ -1,9 +1,26 @@
----------------------------------
--- IUT Saint-Etienne
--- Filename:  cmpt2seven.vhd
--- Edited by: Leo Raclet
--- Date:      26/01/2022
----------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Count on 4 bits and decode binary count to seven segments
+-- File name:     cmpt2seven.vhd
+-- Description:   Combinatorial block used to decode
+--                4-bit binary input to 7 segment LED
+--                display. Active segments are in level 0.
+--                Segment coding
+--                      aaaaa
+--                     f     b
+--                     f     b
+--                      ggggg
+--                     e     c
+--                     e     c
+--                      ddddd
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          26/01/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -16,7 +33,7 @@ ENTITY cmpt2seven IS
     a, b, c, d, e, f, g : OUT STD_LOGIC);
 END cmpt2seven;
 
-ARCHITECTURE cmpt OF cmpt2seven IS
+ARCHITECTURE rtl OF cmpt2seven IS
 
   SIGNAL u1_out : STD_LOGIC;
   SIGNAL u2_out : STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -65,4 +82,4 @@ BEGIN
     f   => f,
     g   => g);
 
-END cmpt;
+END rtl;

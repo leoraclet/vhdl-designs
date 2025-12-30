@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   4-bits Ripple Carry Adder
+-- File name:     ripple_carry_4bits.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -10,7 +23,7 @@ ENTITY ripple_carry_4bits IS
     Rs : OUT STD_LOGIC);
 END ripple_carry_4bits;
 
-ARCHITECTURE logique OF ripple_carry_4bits IS
+ARCHITECTURE rtl OF ripple_carry_4bits IS
   COMPONENT full_adder IS
     PORT (
       A  : IN  STD_LOGIC;
@@ -50,4 +63,4 @@ BEGIN
     Rs => R(3));
 
   Rs <= R(3);
-END logique;
+END rtl;

@@ -10,7 +10,7 @@ ENTITY decodeur_pap IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavioral OF decodeur_pap IS
+ARCHITECTURE rtl OF decodeur_pap IS
   SIGNAL s : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
 BEGIN
   WITH step SELECT

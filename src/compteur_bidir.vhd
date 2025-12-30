@@ -11,7 +11,7 @@ ENTITY compteur_bidir IS
     S       : OUT STD_LOGIC);
 END compteur_bidir;
 
-ARCHITECTURE logique OF compteur_bidir IS
+ARCHITECTURE rtl OF compteur_bidir IS
   SIGNAL Q : INTEGER RANGE 0 TO 5 := 0;
 BEGIN
   PROCESS (clk, reset)
@@ -39,4 +39,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

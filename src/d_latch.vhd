@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Synchronous D latch
+-- File name:     d_latch.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -11,7 +24,7 @@ ENTITY d_latch IS
     notQ  : OUT STD_LOGIC);
 END d_latch;
 
-ARCHITECTURE logique OF d_latch IS
+ARCHITECTURE rtl OF d_latch IS
 BEGIN
   PROCESS (clk, SET, RESET)
   BEGIN
@@ -28,4 +41,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

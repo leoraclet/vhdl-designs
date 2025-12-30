@@ -10,8 +10,8 @@ ENTITY full_adder IS
     Rs : OUT STD_LOGIC);
 END full_adder;
 
-ARCHITECTURE logique OF full_adder IS
+ARCHITECTURE rtl OF full_adder IS
 BEGIN
   S  <= A XOR B XOR Re;
   Rs <= (Re AND A) OR (Re AND B) OR (A AND B);
-END logique;
+END rtl;

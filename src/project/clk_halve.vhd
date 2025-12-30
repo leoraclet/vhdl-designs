@@ -1,7 +1,7 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  gen_ena.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      26/01/2022
 -----------------------------
 
@@ -17,7 +17,7 @@ ENTITY clk_halve IS
     ena_out : OUT STD_LOGIC);
 END clk_halve;
 
-ARCHITECTURE ena OF clk_halve IS
+ARCHITECTURE rtl OF clk_halve IS
   SIGNAL s : STD_LOGIC := '0';
 
 BEGIN
@@ -32,4 +32,4 @@ BEGIN
     END IF;
   END PROCESS;
   ena_out <= s;
-END ena;
+END rtl;

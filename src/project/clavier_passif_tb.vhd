@@ -6,7 +6,7 @@ USE ieee.math_real.ALL;
 ENTITY tb_clavier_passif IS
 END ENTITY;
 
-ARCHITECTURE test OF tb_clavier_passif IS
+ARCHITECTURE rtl OF tb_clavier_passif IS
   SIGNAL clk                 : STD_LOGIC                    := '0';
   SIGNAL resetb              : STD_LOGIC                    := '0';
   SIGNAL lignes              : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111";

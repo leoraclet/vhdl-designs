@@ -9,7 +9,7 @@
 --				S:     OUT STD_LOGIC);
 --END compteur;
 --
---ARCHITECTURE logique OF compteur IS
+--ARCHITECTURE rtl OF compteur IS
 --	SIGNAL Q: STD_LOGIC_VECTOR(2 DOWNTO 0);
 --	SIGNAL D: STD_LOGIC_VECTOR(2 DOWNTO 0);
 --BEGIN
@@ -44,7 +44,7 @@ ENTITY compteur IS
     S     : OUT STD_LOGIC);
 END compteur;
 
-ARCHITECTURE logique OF compteur IS
+ARCHITECTURE rtl OF compteur IS
   SIGNAL Q : INTEGER RANGE 0 TO 5 := 0;
 BEGIN
   PROCESS (clk, reset)
@@ -65,4 +65,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

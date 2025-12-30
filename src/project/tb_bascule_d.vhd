@@ -6,7 +6,7 @@ USE ieee.std_logic_unsigned.ALL;
 ENTITY tb_bascule_d IS
 END ENTITY;
 
-ARCHITECTURE modele_test OF tb_bascule_d IS
+ARCHITECTURE rtl OF tb_bascule_d IS
   COMPONENT bascule_d
     PORT (
       d, clk, reset : IN  STD_LOGIC;

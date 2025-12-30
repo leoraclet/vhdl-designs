@@ -1,7 +1,21 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Simple 4-bits adder and dubtracter
+-- File name:     add_sub4.vhd
+-- Description:   The circuit =>
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          26/01/2022
+-- Revision:
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY add_sub IS
+ENTITY add_sub4 IS
   PORT (
     op         : IN  STD_LOGIC;
     a          : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -9,9 +23,9 @@ ENTITY add_sub IS
     s          : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     n, z, c, v : OUT STD_LOGIC
   );
-END add_sub;
+END add_sub4;
 
-ARCHITECTURE rtl OF add_sub IS
+ARCHITECTURE rtl OF add_sub4 IS
   COMPONENT fa IS
     PORT (
       a     : IN  STD_LOGIC;

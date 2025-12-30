@@ -1,7 +1,7 @@
 ---------------------------------
 -- IUT Saint-Etienne
 -- Filename:  cmpt4_bidirena.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      25/01/2022
 ---------------------------------
 
@@ -21,7 +21,7 @@ ENTITY inc4bits IS
   );
 END inc4bits;
 
-ARCHITECTURE cmpt OF inc4bits IS
+ARCHITECTURE rtl OF inc4bits IS
   SIGNAL s : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
 
 BEGIN
@@ -43,4 +43,4 @@ BEGIN
 
   inc <= s;
 
-END cmpt;
+END rtl;

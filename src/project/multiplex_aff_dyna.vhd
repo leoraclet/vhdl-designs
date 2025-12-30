@@ -12,7 +12,7 @@ ENTITY multiplexeur_affdyna IS
   );
 END multiplexeur_affdyna;
 
-ARCHITECTURE arch OF multiplexeur_affdyna IS
+ARCHITECTURE rtl OF multiplexeur_affdyna IS
 
 BEGIN
 
@@ -23,4 +23,4 @@ BEGIN
     eMU WHEN "11",
     "0000" WHEN OTHERS;
 
-END arch;
+END rtl;

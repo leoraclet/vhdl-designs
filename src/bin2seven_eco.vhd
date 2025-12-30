@@ -1,9 +1,26 @@
----------------------------------
--- IUT Saint-Etienne
--- Filename:  bin2seven_eco.vhd
--- Edited by: Leo Raclet
--- Date:      25/01/2022
----------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Decode binary (4 bits) to seven segments, with on/off signal
+-- File name:     bin2seven_eco.vhd
+-- Description:   Combinatorial block used to decode
+--                4-bit binary input to 7 segment LED
+--                display. Active segments are in level 0.
+--                Segment coding
+--                      aaaaa
+--                     f     b
+--                     f     b
+--                      ggggg
+--                     e     c
+--                     e     c
+--                      ddddd
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          25/01/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -15,7 +32,7 @@ ENTITY bin2seven_eco IS
     a, b, c, d, e, f, g : OUT STD_LOGIC);
 END bin2seven_eco;
 
-ARCHITECTURE a OF bin2seven_eco IS
+ARCHITECTURE rtl OF bin2seven_eco IS
   SIGNAL s   : STD_LOGIC_VECTOR(6 DOWNTO 0);
   SIGNAL sel : STD_LOGIC_VECTOR(4 DOWNTO 0);
 
@@ -51,4 +68,4 @@ BEGIN
   f <= s(1);
   g <= s(0);
 
-END a;
+END rtl;

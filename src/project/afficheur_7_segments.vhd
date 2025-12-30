@@ -10,7 +10,7 @@ ENTITY afficheur_7_segments IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavioral OF afficheur_7_segments IS
+ARCHITECTURE rtl OF afficheur_7_segments IS
   SIGNAL s : STD_LOGIC_VECTOR(6 DOWNTO 0);
 BEGIN
   WITH entree SELECT

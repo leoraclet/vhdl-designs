@@ -13,7 +13,7 @@ ENTITY afficheur_dyna IS
     a4, b4, c4, d4, e4, f4, g4 : OUT STD_LOGIC);
 END afficheur_dyna;
 
-ARCHITECTURE arch OF afficheur_dyna IS
+ARCHITECTURE rtl OF afficheur_dyna IS
 
   COMPONENT multiplexeur_affdyna
     PORT (
@@ -68,4 +68,4 @@ BEGIN
     a3, b3, c3, d3, e3, f3, g3,
     a4, b4, c4, d4, e4, f4, g4,
     i_a, i_b, i_c, i_d, i_e, i_f, i_g);
-END arch;
+END rtl;

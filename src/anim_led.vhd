@@ -1,9 +1,16 @@
------------------------------
--- IUT Saint-Etienne
--- Filename:  anim_led.vhd
--- Edited by: Leo Raclet
--- Date:      26/01/2022
------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Animated LED unit
+-- File name:     anim_led.vhd
+-- Description:   The circuit =>
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          26/01/2022
+-- Revision:
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -17,7 +24,7 @@ ENTITY anim_led IS
     l1, l2, l3, l4 : OUT STD_LOGIC);
 END anim_led;
 
-ARCHITECTURE anim OF anim_led IS
+ARCHITECTURE rtl OF anim_led IS
 
   SIGNAL led : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
   SIGNAL l   : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
@@ -66,4 +73,4 @@ BEGIN
   l3 <= l(2);
   l4 <= l(3);
 
-END anim;
+END rtl;

@@ -14,7 +14,7 @@ ENTITY chrono_ski IS
     L                          : OUT STD_LOGIC);
 END ENTITY;
 
-ARCHITECTURE Behavior OF chrono_ski IS
+ARCHITECTURE rtl OF chrono_ski IS
   TYPE state_type IS (s0, s1, s2, s3);
   SIGNAL state    : state_type;
   SIGNAL cmpt1    : STD_LOGIC_VECTOR(3 DOWNTO 0);

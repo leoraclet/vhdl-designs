@@ -10,8 +10,8 @@ ENTITY demi_add IS
   );
 END demi_add;
 
-ARCHITECTURE arch_flot OF demi_add IS
+ARCHITECTURE rtl OF demi_add IS
 BEGIN
   r     <= a XOR b;
   c_out <= a AND b;
-END arch_flot;
+END rtl;

@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   4-bits register
+-- File name:     reg_4bits.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -9,7 +22,7 @@ ENTITY reg_4bits IS
     Q     : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
 END reg_4bits;
 
-ARCHITECTURE logique OF reg_4bits IS
+ARCHITECTURE rtl OF reg_4bits IS
 BEGIN
   PROCESS (clk, reset)
   BEGIN
@@ -21,4 +34,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

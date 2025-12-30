@@ -12,7 +12,7 @@ ENTITY cmpt4_bidirena IS
     cmpto : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
 END ENTITY;
 
-ARCHITECTURE cmpt OF cmpt4_bidirena IS
+ARCHITECTURE rtl OF cmpt4_bidirena IS
   SIGNAL s : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
 
 BEGIN

@@ -6,7 +6,7 @@ USE ieee.std_logic_unsigned.ALL;
 ENTITY tb_registre_decalage IS
 END ENTITY;
 
-ARCHITECTURE modele_test OF tb_registre_decalage IS
+ARCHITECTURE rtl OF tb_registre_decalage IS
   COMPONENT registre_decalage
     PORT (
       entree, clk, reset : IN  STD_LOGIC;

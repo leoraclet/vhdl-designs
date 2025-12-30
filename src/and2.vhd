@@ -1,11 +1,12 @@
 ----------------------------------------------------------------------
 --
 -- Place:         IUT Saint-Etienne
--- Design unit:   Triple binary XOR
--- File name:     xor3.vhd
--- Description:   .
+-- Design unit:   Simple 2-bits AND logic gate
+-- File name:     and2.vhd
+-- Description:   The circuit =>
+-- System:        VHDL'93
 -- Author:        Léo Raclet
--- Date:          18/10/2022
+-- Date:          26/01/2022
 -- Revision:      December 2025
 -- Last changes:  -
 --
@@ -14,19 +15,15 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY xor3 IS
+ENTITY and2 IS
   PORT (
-    a : IN  STD_LOGIC;
-    b : IN  STD_LOGIC;
-    c : IN  STD_LOGIC;
-    x : OUT STD_LOGIC
+    x1 : IN  STD_LOGIC;
+    x2 : IN  STD_LOGIC;
+    y  : OUT STD_LOGIC
   );
-END xor3;
+END and2;
 
-ARCHITECTURE rtl OF xor3 IS
-  SIGNAL sig_int : STD_LOGIC;
-
+ARCHITECTURE rtl OF and2 IS
 BEGIN
-  sig_int <= a XOR b;
-  x       <= c XOR sig_int;
+  y <= x1 AND x2;
 END rtl;

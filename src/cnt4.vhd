@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   Asynchronous 4-bit counter using  D flip-flops
+-- Design unit:   Asynchronous 4-bit counter using D flip-flops
 -- File name:     cnt4.vhd
 -- Description:   Simple sequential block
 -- Parameters:    No parameters
@@ -36,7 +36,7 @@ BEGIN
   END PROCESS;
   d_reg0_out <= d_reg(0);
   cnt(0)     <= NOT d_reg(0);
-  --
+
   PROCESS (d_reg0_out)
   BEGIN
     IF rising_edge(d_reg0_out) THEN
@@ -45,7 +45,7 @@ BEGIN
   END PROCESS;
   d_reg1_out <= d_reg(1);
   cnt(1)     <= NOT d_reg(1);
-  --
+
   PROCESS (d_reg1_out)
   BEGIN
     IF rising_edge(d_reg1_out) THEN
@@ -54,7 +54,7 @@ BEGIN
   END PROCESS;
   d_reg2_out <= d_reg(2);
   cnt(2)     <= NOT d_reg(2);
-  --
+
   PROCESS (d_reg2_out)
   BEGIN
     IF rising_edge(d_reg2_out) THEN
@@ -62,6 +62,5 @@ BEGIN
     END IF;
   END PROCESS;
   cnt(3) <= NOT d_reg(3);
-  --
 
 END rtl;

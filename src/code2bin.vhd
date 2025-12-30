@@ -1,9 +1,15 @@
-------------------------------------
---  IUT St-Etienne
---  Filename:  code2bin
---  Edited by: Leo Raclet
---  Date:      18/10/2021
-------------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Decode bit position to number
+-- File name:     code2bin.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -15,7 +21,7 @@ ENTITY code2bin IS
   );
 END code2bin;
 
-ARCHITECTURE fd OF code2bin IS
+ARCHITECTURE rtl OF code2bin IS
 BEGIN
 
   b <= "11" WHEN req(3) = '0' ELSE
@@ -23,4 +29,4 @@ BEGIN
        "01" WHEN req(1) = '0' ELSE
        "00";
 
-END fd;
+END rtl;

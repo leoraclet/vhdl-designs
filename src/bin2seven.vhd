@@ -1,9 +1,26 @@
------------------------------
--- IUT Saint-Etienne
--- Filename:  bin2seven.vhd
--- Edited by: Leo Raclet
--- Date:      18/10/2021
------------------------------
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Decode binary (4 bits) to seven segments
+-- File name:     bin2seven.vhd
+-- Description:   Combinatorial block used to decode
+--                4-bit binary input to 7 segment LED
+--                display. Active segments are in level 0.
+--                Segment coding
+--                      aaaaa
+--                     f     b
+--                     f     b
+--                      ggggg
+--                     e     c
+--                     e     c
+--                      ddddd
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          18/10/2021
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -15,7 +32,7 @@ ENTITY bin2seven IS
   );
 END bin2seven;
 
-ARCHITECTURE a OF bin2seven IS
+ARCHITECTURE rtl OF bin2seven IS
   SIGNAL s : STD_LOGIC_VECTOR(6 DOWNTO 0);
 
 BEGIN
@@ -39,7 +56,7 @@ BEGIN
     "0110000" WHEN "1110",
     "0111000" WHEN OTHERS;
 
-  -- Afficheur à anodes communes
+  -- For common anode display
 
   a <= s(6);
   b <= s(5);
@@ -49,7 +66,8 @@ BEGIN
   f <= s(1);
   g <= s(0);
 
-  -- Afficheur à cathodes communes
+  -- For common cathode display
+  -- Simply invert all the output bits.
 
   -- a <= NOT s(6);
   -- b <= NOT s(5);
@@ -59,6 +77,4 @@ BEGIN
   -- f <= NOT s(1);
   -- g <= NOT s(0);
 
-  -- Il suffit d'inverser tous les bits de sortie
-
-END a;
+END rtl;

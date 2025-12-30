@@ -10,7 +10,7 @@ ENTITY bascule_d IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavioral OF bascule_d IS
+ARCHITECTURE rtl OF bascule_d IS
 BEGIN
   PROCESS (clk, reset)
   BEGIN

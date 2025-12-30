@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Hamming weight calculator
+-- File name:     pds_hamm.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -8,7 +21,7 @@ ENTITY pds_hamm IS
     S2 : OUT STD_LOGIC_VECTOR(2 DOWNTO 0));
 END pds_hamm;
 
-ARCHITECTURE logique OF pds_hamm IS
+ARCHITECTURE rtl OF pds_hamm IS
   SIGNAL A, B, C, D : STD_LOGIC;
 BEGIN
   A <= E(0);
@@ -20,6 +33,8 @@ BEGIN
   S1(1) <= (C AND D AND NOT(A)) OR (B AND C AND NOT(D)) OR (C AND A AND NOT(B)) OR (A AND NOT(C) AND NOT(D)) OR (D AND NOT(A) AND B) OR (NOT(C) AND A AND B);
   S1(2) <= A AND B AND C AND D;
 
+  -- Another way (more static) to achieve the same result
+  -- The following truth table was used to derive the logic equations above
   --   WITH E SELECT
   --     S2 <= "000" WHEN "0000",
   --     "001" WHEN "0001",
@@ -37,4 +52,4 @@ BEGIN
   --     "011" WHEN "1101",
   --     "011" WHEN "1110",
   --     "100" WHEN OTHERS;
-END logique;
+END rtl;

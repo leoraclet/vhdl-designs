@@ -1,7 +1,20 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Synchronous D latch v2.0
+-- File name:     d_latch_v2.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY d_latch_2 IS
+ENTITY d_latch_v2 IS
   PORT (
     clk   : IN  STD_LOGIC;
     ena   : IN  STD_LOGIC;
@@ -9,9 +22,9 @@ ENTITY d_latch_2 IS
     reset : IN  STD_LOGIC;
     Q     : OUT STD_LOGIC;
     notQ  : OUT STD_LOGIC);
-END d_latch_2;
+END d_latch_v2;
 
-ARCHITECTURE logique OF d_latch_2 IS
+ARCHITECTURE rtl OF d_latch_v2 IS
 BEGIN
   PROCESS (clk, reset)
   BEGIN
@@ -27,4 +40,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

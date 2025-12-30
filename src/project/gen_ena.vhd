@@ -1,7 +1,7 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  gen_ena.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      26/01/2022
 -----------------------------
 
@@ -16,7 +16,7 @@ ENTITY gen_ena IS
     ena_out : OUT STD_LOGIC);
 END gen_ena;
 
-ARCHITECTURE ena OF gen_ena IS
+ARCHITECTURE rtl OF gen_ena IS
   SIGNAL s : STD_LOGIC_VECTOR(25 DOWNTO 0) := "00000000000000000000000000"; -- 26 bits to count to: (50 x 10^6) - 1
 
 BEGIN
@@ -38,4 +38,4 @@ BEGIN
       ena_out <= '0';
     END IF;
   END PROCESS;
-END ena;
+END rtl;

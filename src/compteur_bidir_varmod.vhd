@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   .
+-- File name:     code2bin.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
@@ -13,7 +26,7 @@ ENTITY compteur_bidir_varmod IS
     S          : OUT STD_LOGIC);
 END compteur_bidir_varmod;
 
-ARCHITECTURE logique OF compteur_bidir_varmod IS
+ARCHITECTURE rtl OF compteur_bidir_varmod IS
   SIGNAL Q : INTEGER RANGE 0 TO 15 := 0;
 BEGIN
   PROCESS (clk, reset)
@@ -49,4 +62,4 @@ BEGIN
       END IF;
     END IF;
   END PROCESS;
-END logique;
+END rtl;

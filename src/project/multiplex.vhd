@@ -11,7 +11,7 @@ ENTITY multiplex IS
   );
 END ENTITY;
 
-ARCHITECTURE Behavioral OF multiplex IS
+ARCHITECTURE rtl OF multiplex IS
 BEGIN
   s <= e0 WHEN sel = '0' ELSE
        e1;

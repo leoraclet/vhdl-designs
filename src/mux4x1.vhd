@@ -1,3 +1,16 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   .
+-- File name:     mux4x1.vhd
+-- Description:   .
+-- Author:        Léo Raclet
+-- Date:          18/10/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
@@ -13,7 +26,7 @@ ENTITY mux4x1 IS
     S3   : OUT STD_LOGIC);
 END mux4x1;
 
-ARCHITECTURE logique OF mux4x1 IS
+ARCHITECTURE rtl OF mux4x1 IS
 BEGIN
   S1 <= (A AND (NOT(COMM(0)) AND NOT(COMM(1)))) OR
         (B AND (COMM(0) AND NOT(COMM(1)))) OR
@@ -35,4 +48,4 @@ BEGIN
     END CASE;
   END PROCESS;
 
-END logique;
+END rtl;

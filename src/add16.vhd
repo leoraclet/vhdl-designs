@@ -1,3 +1,17 @@
+----------------------------------------------------------------------
+--
+-- Place:         IUT Saint-Etienne
+-- Design unit:   Simple 16-bits adder
+-- File name:     add16.vhd
+-- Description:   The circuit =>
+-- System:        VHDL'93
+-- Author:        Léo Raclet
+-- Date:          26/01/2022
+-- Revision:      December 2025
+-- Last changes:  -
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
@@ -10,7 +24,7 @@ ENTITY add16 IS
   );
 END add16;
 
-ARCHITECTURE add16_struct OF add16 IS
+ARCHITECTURE rtl OF add16 IS
   SIGNAL c_int : STD_LOGIC_VECTOR(3 DOWNTO 0);
   COMPONENT add4
     PORT (
@@ -45,4 +59,4 @@ BEGIN
     c_in  => c_int(3),
     r     => s(15 DOWNTO 12),
     c_out => c_out);
-END add16_struct;
+END rtl;

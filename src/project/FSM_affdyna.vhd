@@ -9,13 +9,13 @@ ENTITY machine_affdyna IS
     s_sel    : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
 END machine_affdyna;
 
-ARCHITECTURE cmpt OF machine_affdyna IS
+ARCHITECTURE rtl OF machine_affdyna IS
   TYPE state_machine IS(sortieHD, wait1, sortieHU, wait2, sortieMD, wait3, sortieMU, wait4);
   SIGNAL state : state_machine;
 BEGIN
   PROCESS (clk, rst)
   BEGIN
-    --Reset machine
+    -- Reset machine
     IF rst = '1' THEN
       state <= sortieHD;
     ELSIF rising_edge(clk) THEN
@@ -33,9 +33,9 @@ BEGIN
     END IF;
   END PROCESS;
 
-  --Affectation des sorties
+  -- Affectation des sorties
   s_sel <= "00" WHEN (state = sortieHD OR state = wait1) ELSE
            "01" WHEN(state = sortieHU OR state = wait2) ELSE
            "10" WHEN(state = sortieMD OR state = wait3) ELSE
            "11";
-END cmpt;
+END rtl;

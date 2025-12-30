@@ -8,7 +8,7 @@ ENTITY mul_2bits IS
     S : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
 END mul_2bits;
 
-ARCHITECTURE logique OF mul_2bits IS
+ARCHITECTURE rtl OF mul_2bits IS
   COMPONENT full_adder IS
     PORT (
       A  : IN  STD_LOGIC;
@@ -32,4 +32,4 @@ BEGIN
     S  => S(2),
     Rs => S(3));
   S(0) <= A(0) AND B(0);
-END logique;
+END rtl;

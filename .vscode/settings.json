@@ -1,0 +1,12 @@
+{
+    "vhdl-by-hgb.vhdl-formatter.case.keyword": "UpperCase",
+    "vhdl-by-hgb.vhdl-formatter.case.typename": "UpperCase",
+    "vhdl-by-hgb.vhdl-formatter.indentation": "  ",
+    "vhdl-by-hgb.vhdl-formatter.insertFinalNewline": true,
+    "vhdl-by-hgb.vhdl-formatter.align.procedure": true,
+    "vhdl-by-hgb.vhdl-formatter.align.port": true,
+    "vhdl-by-hgb.vhdl-formatter.align.generic": true,
+    "vhdl-by-hgb.vhdl-formatter.align.function": true,
+    "vhdl-by-hgb.vhdl-formatter.align.all": true,
+    "vhdl-by-hgb.vhdl-formatter.align.comments": true,
+}

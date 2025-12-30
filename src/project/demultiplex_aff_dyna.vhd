@@ -15,7 +15,7 @@ ENTITY demultiplexeur_affdyna IS
   );
 END demultiplexeur_affdyna;
 
-ARCHITECTURE arch OF demultiplexeur_affdyna IS
+ARCHITECTURE rtl OF demultiplexeur_affdyna IS
 
 BEGIN
 
@@ -83,4 +83,4 @@ BEGIN
   g4 <= g WHEN sel = "11" ELSE
         '1';
 
-END arch;
+END rtl;

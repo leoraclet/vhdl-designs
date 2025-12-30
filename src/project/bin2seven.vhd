@@ -1,7 +1,7 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  bin2seven.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      18/10/2021
 -----------------------------
 
@@ -14,7 +14,7 @@ ENTITY bin2seven IS
     a, b, c, d, e, f, g : OUT STD_LOGIC);
 END bin2seven;
 
-ARCHITECTURE a OF bin2seven IS
+ARCHITECTURE rtl OF bin2seven IS
   SIGNAL s : STD_LOGIC_VECTOR(6 DOWNTO 0);
 BEGIN
 
@@ -58,4 +58,4 @@ BEGIN
   f <= NOT s(1);
   g <= NOT s(0);
 
-END a;
+END rtl;

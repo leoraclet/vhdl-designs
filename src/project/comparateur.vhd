@@ -11,7 +11,7 @@ ENTITY comparateur IS
   );
 END comparateur;
 
-ARCHITECTURE arch OF comparateur IS
+ARCHITECTURE rtl OF comparateur IS
   SIGNAL s0_interne, s1_interne, s2_interne, s3_interne, s4_interne : STD_LOGIC_VECTOR(3 DOWNTO 0);
 BEGIN
 
@@ -24,4 +24,4 @@ BEGIN
 
   led_out <= NOT(s4_interne(0)) AND NOT(s4_interne(1)) AND NOT(s4_interne(2)) AND NOT(s4_interne(3)) AND SWADA;
 
-END arch;
+END rtl;

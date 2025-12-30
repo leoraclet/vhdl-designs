@@ -1,7 +1,7 @@
 ---------------------------------
 -- IUT Saint-Etienne
 -- Filename:  cmpt2seven.vhd
--- Edited by: Leo Raclet
+-- Author: Leo Raclet
 -- Date:      26/01/2022
 ---------------------------------
 
@@ -16,7 +16,7 @@ ENTITY cmpt2seven IS
     a, b, c, d, e, f, g : OUT STD_LOGIC);
 END ENTITY;
 
-ARCHITECTURE cmpt OF cmpt2seven IS
+ARCHITECTURE rtl OF cmpt2seven IS
 
   SIGNAL u1_out : STD_LOGIC;
   SIGNAL u2_out : STD_LOGIC_VECTOR(3 DOWNTO 0);

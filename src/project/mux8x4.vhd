@@ -11,7 +11,7 @@ ENTITY mux8x4 IS
   );
 END mux8x4;
 
-ARCHITECTURE arch OF mux8x4 IS
+ARCHITECTURE rtl OF mux8x4 IS
 
 BEGIN
 
@@ -32,4 +32,4 @@ BEGIN
     e1MU WHEN '0',
     "0000" WHEN OTHERS;
 
-END arch;
+END rtl;

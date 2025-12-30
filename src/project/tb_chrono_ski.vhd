@@ -6,7 +6,7 @@ USE ieee.math_real.ALL;
 ENTITY tb_chrono_ski IS
 END ENTITY;
 
-ARCHITECTURE test OF tb_chrono_ski IS
+ARCHITECTURE rtl OF tb_chrono_ski IS
   SIGNAL clk, init, CD, CA, start, a1, b1, c1, d1, e1, f1, g1, a2, b2, c2, d2, e2, f2, g2, L : STD_LOGIC;
 
   COMPONENT chrono_ski IS
