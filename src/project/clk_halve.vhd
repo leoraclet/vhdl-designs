@@ -1,0 +1,35 @@
+-----------------------------
+-- IUT Saint-Etienne
+-- Filename:  gen_ena.vhd
+-- Edited by: Leo Raclet
+-- Date:      26/01/2022
+-----------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY clk_halve IS
+  PORT (
+    clkin   : IN  STD_LOGIC;
+    ena_in  : IN  STD_LOGIC;
+    rst     : IN  STD_LOGIC;
+    ena_out : OUT STD_LOGIC);
+END clk_halve;
+
+ARCHITECTURE ena OF clk_halve IS
+  SIGNAL s : STD_LOGIC := '0';
+
+BEGIN
+  PROCESS (clkin, rst)
+  BEGIN
+    IF rst = '1' THEN
+      s <= '0';
+    ELSIF rising_edge(clkin) THEN
+      IF ena_in = '1' THEN
+        s <= NOT s;
+      END IF;
+    END IF;
+  END PROCESS;
+  ena_out <= s;
+END ena;
