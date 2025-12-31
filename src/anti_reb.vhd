@@ -9,12 +9,6 @@
 --                if they are identical, they determine the value
 --                saved in the next flip-flop. If they are different,
 --                the flip-flop value is not modified.
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, December 2009
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

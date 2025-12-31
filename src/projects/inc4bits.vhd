@@ -1,8 +1,6 @@
 ---------------------------------
 -- IUT Saint-Etienne
 -- Filename:  cmpt4_bidirena.vhd
--- Author: Leo Raclet
--- Date:      25/01/2022
 ---------------------------------
 
 LIBRARY ieee;

@@ -1,14 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Simple 4-bits adder and dubtracter
 -- File name:     add_sub4.vhd
 -- Description:   The circuit =>
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          26/01/2022
--- Revision:
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

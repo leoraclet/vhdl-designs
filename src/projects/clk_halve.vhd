@@ -1,9 +1,10 @@
------------------------------
--- IUT Saint-Etienne
--- Filename:  gen_ena.vhd
--- Author: Leo Raclet
--- Date:      26/01/2022
------------------------------
+----------------------------------------------------------------------
+--
+-- Design unit:   Divides frequency by 2
+-- File name:     clk_halve.vhd
+-- Description:   .
+--
+----------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

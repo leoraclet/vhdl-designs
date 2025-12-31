@@ -1,6 +1,5 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Decode binary (4 bits) to seven segments, with on/off signal
 -- File name:     bin2seven_eco.vhd
 -- Description:   Combinatorial block used to decode
@@ -14,11 +13,6 @@
 --                     e     c
 --                     e     c
 --                      ddddd
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          25/01/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

@@ -1,13 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   4-bit comparator
 -- File name:     cmp4.vhd
 -- Description:   .
--- Author:        Léo Raclet
--- Date:          18/10/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

@@ -3,12 +3,6 @@
 -- Design unit:   Asynchronous memory initialization control unit
 -- File name:     init_mem.vhd
 -- Description:   A state machine example
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, December 2007
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

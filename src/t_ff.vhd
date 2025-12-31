@@ -3,12 +3,6 @@
 -- Design unit:   Synchronous T flip-flop
 -- File name:     t_ff.vhd
 -- Description:   Simple sequential block
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, December 2007
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

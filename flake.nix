@@ -25,20 +25,8 @@
             yosys
             yosys-ghdl
             gnumake
-            python312
-            python312Packages.riscof
-            python312Packages.distutils
-            pandoc
-            graphviz
-            netlistsvg
-            texlive.combined.scheme-full
-            sail-riscv
-            spike
-            dtc
-
-            pkgsCross.riscv32-embedded.stdenv.cc
-            asm-lsp
-            clang
+            nvc
+            uv
           ];
         };
       }

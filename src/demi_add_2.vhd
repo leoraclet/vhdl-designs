@@ -1,16 +1,24 @@
+----------------------------------------------------------------------
+--
+-- Design unit:   .
+-- File name:     demi_add_v2.vhd
+-- Description:   .
+--
+---------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY demi_add_2 IS
+ENTITY demi_add_v2 IS
   PORT (
     a     : IN  STD_LOGIC;
     b     : IN  STD_LOGIC;
     r     : OUT STD_LOGIC;
     c_out : OUT STD_LOGIC
   );
-END demi_add_2;
+END demi_add_v2;
 
-ARCHITECTURE rtl OF demi_add_2 IS
+ARCHITECTURE rtl OF demi_add_v2 IS
   COMPONENT xor2 IS
     PORT (
       i1 : IN  STD_LOGIC;

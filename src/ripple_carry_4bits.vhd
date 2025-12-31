@@ -1,13 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   4-bits Ripple Carry Adder
 -- File name:     ripple_carry_4bits.vhd
 -- Description:   .
--- Author:        Léo Raclet
--- Date:          18/10/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

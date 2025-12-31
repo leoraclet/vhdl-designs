@@ -3,12 +3,6 @@
 -- Design unit:   Commande of the lift in a two-floor building
 -- File name:     commande.vhd
 -- Description:   A state machine example
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, October 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

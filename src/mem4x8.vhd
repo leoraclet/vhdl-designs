@@ -6,12 +6,6 @@
 --                address one of four internal registers for writing
 --                or reading. n_wr signal defines direction:
 --                0 - writing, 1 - reading
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, December 2007
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

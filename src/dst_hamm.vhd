@@ -1,13 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Computes hamming distance between two 4-bits inputs
 -- File name:     dst_hamm.vhd
 -- Description:   .
--- Author:        Léo Raclet
--- Date:          18/10/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

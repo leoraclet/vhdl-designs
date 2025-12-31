@@ -3,12 +3,6 @@
 -- Design unit:   Frequency divider by 10
 -- File name:     div10.vhd
 -- Description:   Devides input frequency by 10
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, September 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

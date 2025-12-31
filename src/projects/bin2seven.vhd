@@ -1,8 +1,6 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  bin2seven.vhd
--- Author: Leo Raclet
--- Date:      18/10/2021
 -----------------------------
 
 LIBRARY ieee;

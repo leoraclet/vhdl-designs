@@ -14,6 +14,8 @@
 - [🔧 Tools](#-tools)
 - [🚀 Simulate](#-simulate)
 - [📚 Resources](#-resources)
+- [🧪 Test](#-test)
+- [✔️ TODOs](#️-todos)
 - [📜 License](#-license)
 
 ## 📖 About
@@ -49,6 +51,19 @@ These designs are reusable and suitable for a variety of computing and electroni
 
 > [!WARNING]
 > Soon ...
+
+## 🧪 Test
+
+> [!WARNING]
+> Soon ...
+
+## ✔️ TODOs
+
+- [ ] Implement test bench for all designs
+- [ ] Comment all designs
+    - [ ] Complete descriptions
+    - [ ] Explain design decisions
+- [ ] Automate testing and analysis through a `Makefile`
 
 ## 📜 License
 

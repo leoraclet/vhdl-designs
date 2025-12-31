@@ -8,12 +8,6 @@
 --                The level at the output be the level of the
 --                active request having the highest priority.
 --                The highest priority request - 1, the lowest - 7.
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, September 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

@@ -8,12 +8,6 @@
 --                  2. decrementation from 9 to 5
 --                  3. incrementation from 5 to 7
 --                  4. decrementation from 7 to 0
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, December 2007
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

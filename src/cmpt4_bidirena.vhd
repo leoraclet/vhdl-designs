@@ -1,14 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Bidirectionnal 4-bits counter with asynchronous reset
 -- File name:     cmpt4_bidirena.vhd
 -- Description:   .
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          25/01/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

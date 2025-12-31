@@ -1,13 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Decode bit position to number
 -- File name:     ouex.vhd
 -- Description:   .
--- Author:        Léo Raclet
--- Date:          18/10/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 
@@ -24,8 +19,10 @@ END ouex;
 
 ARCHITECTURE rtl OF ouex IS
 BEGIN
-  -- S1 <= (A OR B) AND NOT(A AND B);
   S1 <= A WHEN B = '0' ELSE
         NOT(A);
+
+  -- The following logic equation is the equivalent of thelogic condition above
+  -- S1 <= (A OR B) AND NOT(A AND B);
   S2 <= A XOR B;
 END rtl;

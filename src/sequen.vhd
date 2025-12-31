@@ -13,12 +13,6 @@
 --
 --                 Output "leds" is created as follows
 --                   leds <= d1 & d2 & d3 & d4;
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, October 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

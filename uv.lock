@@ -1,0 +1,74 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697, upload-time = "2022-10-25T02:36:22.414Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
+]
+
+[[package]]
+name = "glob2"
+version = "0.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/a5/bbbc3b74a94fbdbd7915e7ad030f16539bfdc1362f7e9003b594f0537950/glob2-0.7.tar.gz", hash = "sha256:85c3dbd07c8aa26d63d7aacee34fa86e9a91a3873bc30bf62ec46e531f92ab8c", size = 10697, upload-time = "2019-06-10T23:33:48.308Z" }
+
+[[package]]
+name = "pathlib"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/aa/9b065a76b9af472437a0059f77e8f962fe350438b927cb80184c32f075eb/pathlib-1.0.1.tar.gz", hash = "sha256:6940718dfc3eff4258203ad5021090933e5c04707d5ca8cc9e73c94a7894ea9f", size = 49298, upload-time = "2014-09-03T15:41:57.18Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/78/f9/690a8600b93c332de3ab4a344a4ac34f00c8f104917061f779db6a918ed6/pathlib-1.0.1-py3-none-any.whl", hash = "sha256:f35f95ab8b0f59e6d354090350b44a80a80635d22efdedfa84c7ad1cf0a74147", size = 14363, upload-time = "2022-05-04T13:37:20.585Z" },
+]
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f", size = 22253, upload-time = "2020-11-01T01:40:22.204Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b", size = 16588, upload-time = "2020-11-01T01:40:20.672Z" },
+]
+
+[[package]]
+name = "vhdl"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "vunit-hdl" },
+    { name = "vunit-helpers" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "vunit-hdl", specifier = ">=4.7.0" },
+    { name = "vunit-helpers", specifier = ">=1.0.2" },
+]
+
+[[package]]
+name = "vunit-hdl"
+version = "4.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/06/4e/bb6c6c1aaccc19f5ebd261fa241a044b501a3704dcb8103b769335badbc4/vunit_hdl-4.7.0.tar.gz", hash = "sha256:a25fb991babd2ea851966e0dbdc5f4d8f649ab3e650e3012983b29fd5d18f22d", size = 665458, upload-time = "2023-04-23T18:15:20.905Z" }
+
+[[package]]
+name = "vunit-helpers"
+version = "1.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "glob2" },
+    { name = "pathlib" },
+    { name = "toml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3e/9a/60f5fcb889db2ccb92f7cf7038122e6d68aaa54989814466b9d9e808a230/VUnit-helpers-1.0.2.tar.gz", hash = "sha256:11657a904bff80367a2cf6351fdb864f84ba8069a3a35d7753597102bc6461cc", size = 11454, upload-time = "2024-02-04T13:32:49.59Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/be/8932dd90ffba40b37da6a9d9a737067255bd0643a52a2c2591e6f7d02d2e/VUnit_helpers-1.0.2-py3-none-any.whl", hash = "sha256:d225b368d2914e0da45938747d4945d0d97802c22430300031f1a2a6725a21df", size = 12246, upload-time = "2024-02-04T13:32:47.783Z" },
+]

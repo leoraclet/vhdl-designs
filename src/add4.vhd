@@ -1,14 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Simple 4-bits adder
 -- File name:     add4.vhd
 -- Description:   The circuit =>
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          26/01/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

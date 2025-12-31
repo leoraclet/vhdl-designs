@@ -1,6 +1,5 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Count on 4 bits and decode binary count to seven segments
 -- File name:     cmpt2seven.vhd
 -- Description:   Combinatorial block used to decode
@@ -14,11 +13,6 @@
 --                     e     c
 --                     e     c
 --                      ddddd
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          26/01/2022
--- Revision:      December 2025
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

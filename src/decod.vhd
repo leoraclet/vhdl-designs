@@ -3,12 +3,7 @@
 -- Design unit:   Address decoder with latch
 -- File name:     decod.vhd
 -- Description:   Simple sequential block
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, October 2006
--- Last changes:  - ...
+--
 ---------------------------------------------------------------------
 
 LIBRARY ieee;

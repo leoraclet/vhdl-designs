@@ -1,17 +1,25 @@
+----------------------------------------------------------------------
+--
+-- Design unit:   Asynchronous 4-bit counter using D flip-flops
+-- File name:     cnt4.vhd
+-- Description:   Simple sequential block
+--
+---------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
-ENTITY compteur_bidir IS
+ENTITY cmpt4_bidir IS
 
   PORT (
     clk     : IN  STD_LOGIC;
     reset   : IN  STD_LOGIC;
     UP_DOWN : IN  STD_LOGIC;
     S       : OUT STD_LOGIC);
-END compteur_bidir;
+END cmpt4_bidir;
 
-ARCHITECTURE rtl OF compteur_bidir IS
+ARCHITECTURE rtl OF cmpt4_bidir IS
   SIGNAL Q : INTEGER RANGE 0 TO 5 := 0;
 BEGIN
   PROCESS (clk, reset)

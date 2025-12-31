@@ -3,12 +3,6 @@
 -- Design unit:   Frequency divider by two with D flip-flop
 -- File name:     div2.vhd
 -- Description:   Simple sequential block
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, October 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 

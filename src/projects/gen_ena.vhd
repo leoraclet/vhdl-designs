@@ -1,8 +1,6 @@
 -----------------------------
 -- IUT Saint-Etienne
 -- Filename:  gen_ena.vhd
--- Author: Leo Raclet
--- Date:      26/01/2022
 -----------------------------
 
 LIBRARY ieee;

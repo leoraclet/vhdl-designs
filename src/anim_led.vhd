@@ -1,14 +1,8 @@
 ----------------------------------------------------------------------
 --
--- Place:         IUT Saint-Etienne
 -- Design unit:   Animated LED unit
 -- File name:     anim_led.vhd
 -- Description:   The circuit =>
--- System:        VHDL'93
--- Author:        Léo Raclet
--- Date:          26/01/2022
--- Revision:
--- Last changes:  -
 --
 ----------------------------------------------------------------------
 

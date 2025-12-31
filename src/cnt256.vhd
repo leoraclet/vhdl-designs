@@ -4,12 +4,6 @@
 -- File name:     cnt256.vhd
 -- Description:   8-bit bi-directional synchronous counter
 --                with preset
--- Parameters:    No parameters
--- System:        VHDL'93
--- Autor:         Viktor Fischer, IUT UJM
--- Copyright:     IUT UJM 2006
--- Revision:      Version 1.00, September 2006
--- Last changes:  - ...
 --
 ---------------------------------------------------------------------
 
