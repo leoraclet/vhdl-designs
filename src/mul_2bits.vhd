@@ -17,16 +17,23 @@ ARCHITECTURE rtl OF mul_2bits IS
       S  : OUT STD_LOGIC;
       Rs : OUT STD_LOGIC);
   END COMPONENT;
-  SIGNAL R : STD_LOGIC;
+  SIGNAL R       : STD_LOGIC;
+  SIGNAL andA1B1 : STD_LOGIC;
+  SIGNAL andA0B1 : STD_LOGIC;
+  SIGNAL andA1B0 : STD_LOGIC;
 BEGIN
+
+  andA0B1 <= B(1) AND A(0);
+  andA1B0 <= B(0) AND A(1);
+  andA1B1 <= A(1) AND B(1);
   u1 : full_adder PORT MAP(
-    A  => B(0) AND A(1),
-    B  => B(1) AND A(0),
+    A  => andA1B0,
+    B  => andA0B1,
     Re => '0',
     S  => S(1),
     Rs => R);
   u2 : full_adder PORT MAP(
-    A  => A(1) AND B(1),
+    A  => andA1B1,
     B  => '0',
     Re => R,
     S  => S(2),
