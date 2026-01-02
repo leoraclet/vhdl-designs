@@ -2,7 +2,8 @@
 --
 -- Design unit:   Hamming weight calculator
 -- File name:     pds_hamm.vhd
--- Description:   .
+-- Description:   Combinatorial block used to compute the Hamming
+--                weight of input vector
 --
 ----------------------------------------------------------------------
 
@@ -30,21 +31,22 @@ BEGIN
 
   -- Another way (more static) to achieve the same result
   -- The following truth table was used to derive the logic equations above
-  --   WITH E SELECT
-  --     S2 <= "000" WHEN "0000",
-  --     "001" WHEN "0001",
-  --     "001" WHEN "0010",
-  --     "001" WHEN "0100",
-  --     "001" WHEN "1000",
-  --     "010" WHEN "0011",
-  --     "010" WHEN "0101",
-  --     "010" WHEN "1001",
-  --     "010" WHEN "0110",
-  --     "010" WHEN "1010",
-  --     "010" WHEN "1100",
-  --     "011" WHEN "0111",
-  --     "011" WHEN "1011",
-  --     "011" WHEN "1101",
-  --     "011" WHEN "1110",
-  --     "100" WHEN OTHERS;
+  WITH E SELECT
+    S2 <= "000" WHEN "0000",
+    "001" WHEN "0001",
+    "001" WHEN "0010",
+    "001" WHEN "0100",
+    "001" WHEN "1000",
+    "010" WHEN "0011",
+    "010" WHEN "0101",
+    "010" WHEN "1001",
+    "010" WHEN "0110",
+    "010" WHEN "1010",
+    "010" WHEN "1100",
+    "011" WHEN "0111",
+    "011" WHEN "1011",
+    "011" WHEN "1101",
+    "011" WHEN "1110",
+    "100" WHEN OTHERS;
+
 END rtl;

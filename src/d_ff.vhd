@@ -2,7 +2,7 @@
 --
 -- Design unit:   Synchronous D flip-flop
 -- File name:     d_ff.vhd
--- Description:   Simple sequential block
+-- Description:   Asynchronous reset
 --
 ---------------------------------------------------------------------
 

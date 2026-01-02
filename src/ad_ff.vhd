@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   Asynchronous D flip-flop - D Latch
--- File name:     d_latch.vhd
+-- Design unit:   Asynchronous D flip-flop
+-- File name:     ad_ff.vhd
 -- Description:   Simple sequential block
 --
 ----------------------------------------------------------------------

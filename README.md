@@ -1,6 +1,6 @@
 # VHDL Designs
 
-> A collection of VHDL designs I've built during my studies as exercises and projects.
+> A collection of VHDL designs examples for digital circuits
 
 ![license](https://img.shields.io/github/license/leoraclet/vhdl-designs)
 ![language](https://img.shields.io/github/languages/top/leoraclet/vhdl-designs)
@@ -23,25 +23,69 @@
 ## 📖 About
 
 > [!IMPORTANT]
-> I've made this repo to regroup all those files I've made over the years in one place and make it available to others who might want examples.
+> I've made this collection to regroup all those designs I've made over the years in one single place and make it available to others who might look for examples circuits.
 
-This directory contains a collection of **VHDL designs** built for common logic functions and components.
+This repository contains a collection of **VHDL circuit** examples for digital design course.
 
 These designs are reusable and suitable for a variety of computing and electronics projects, and they were build during my computer science and electronics classes as part of my engineering degree.
 
+Some designs might have multiple architecture implementations to show design options and variations. Basic test bench examples are also given for some circuits.
+
+> [!warning]
+> Not all the designs are tested and verified (but most are), so feel free to send any fixes if you see any mistakes.
+
 ## 🙏 Acknowledgements
 
-- [VHDL Digital Design](https://github.com/fcayci/vhdl-digital-design) - Took inspiration for the Makefile and some VHDL sources. I've stumbled upon this repo while re-structuring this one and looking for already existing ones.
+- My school's professors, for introducing me to this "language" and the lessons that came with it.
+- [VHDL Digital Design](https://github.com/fcayci/vhdl-digital-design) - Took inspiration for the Makefile and some VHDL designs. I've stumbled upon this repo while re-structuring mine and looking for already existing ones.
 
 ## 🧩 Designs
 
+| File                                                     | Design Unit                 | Verified |
+| -------------------------------------------------------- | --------------------------- | -------- |
+| [**`half_add`**](./src/half_add.vhd)                     | Half Adder                  | ...      |
+| [**`full_adder`**](./src/full_adder.vhd)                 | Full Adder                  | ...      |
+| [**`jk_ff`**](./src/jk_ff.vhd)                           | Synchronous JK Flip-Flop    | ...      |
+| [**`d_ff`**](./src/d_ff.vhd)                             | Synchronous D Flip-Flop     | ...      |
+| [**`d_latch`**](./src/d_latch.vhd)                       | Synchronous D Latch         | ...      |
+| [**`ad_ff`**](./src/ad_ff.vhd)                           | Asynchronous D Flip-Flop    | ...      |
+| [**`add4`**](./src/add4.vhd)                             | 4-bits Adder                | ...      |
+| [**`add_sub4`**](./src/add_sub4.vhd)                     | 4-bits Adder & Subtractor   | ...      |
+| [**`add16`**](./src/add16.vhd)                           | 16-bits Adder               | ...      |
+| [**`cmp4`**](./src/cmp4.vhd)                             | 4-bits Comparator           | ...      |
+| [**`bin2seven`**](./src/bin2seven.vhd)                   | Binary to 7 segments        | ...      |
+| [**`code2bin`**](./src/code2bin.vhd)                     | Code to binary              | ...      |
+| [**`cnt4`**](./src/cnt4.vhd)                             | Asynchronous 4-bit counter  | ...      |
+| [**`ripple_carry_4bits`**](./src/ripple_carry_4bits.vhd) | 4-bits Ripple Carry Adder   | ...      |
+| [**`mul_2bits`**](./src/mul_2bits.vhd)                   | 2-bits Multiplier           | ...      |
+| [**`gen_ena`**](./src/gen_ena.vhd)                       | Frequency Divider           | ...      |
+| [**`pri_enc`**](./src/pri_enc.vhd)                       | Priority Encoder            | ...      |
+| [**`reg_4bits`**](./src/reg_4bits.vhd)                   | 4-bits Register             | ...      |
+| [**`pdf_hamm`**](./src/pds_hamm.vhd)                     | Hamming weight calculator   | ...      |
+| [**`dst_hamm`**](./src/dst_hamm.vhd)                     | Hamming Distance calculator | ...      |
+| [**`reg`**](./src/reg.vhd)                               | 8-bits Register             | ...      |
+| ...                                                      | ...                         | ...      |
+
+---
+
 > [!WARNING]
-> Soon ...
+> More to come ...
 
 ## 📦 Structure
 
-> [!WARNING]
-> Soon ...
+- **Directories**
+
+    - [**`.vscode`**](./.vscode/) - Project specific VSCode settings (formatting and extensions)
+    - [**`src`**](./src/) - VHDL designs and circuits (`.vhd`)
+    - [**`doc`**](./doc/) - Documentation (*on its way ...*)
+
+- **Files**
+
+    - `flake.nix` - Environment configuration (based on
+    [**dev-templates**](https://github.com/the-nix-way/dev-templates))
+    - `.envrc` - Used by **direnv** to load **Flakes**
+    - `flake.lock` - Used by **Flakes** to version packages
+    - `Makefile` - Used to automate checks and analyses
 
 ## 🔧 Tools
 
@@ -53,13 +97,33 @@ These designs are reusable and suitable for a variety of computing and electroni
 
 ## ✈️ Usage
 
-- All the files under `rtl/` and `tb/` can be imported in your synthesis tool (e.g Quartus or Vivado).
-- Optionally, you can use GHDL, which is a cross-platform open-source simulator for VHDL language, to simulate the circuits.
-- Simulated results can be viewed using GTKWave which is an open source waveform viewer.
+1. All the files under `rtl/` and `tb/` can be imported in your synthesis tool (e.g Quartus or Vivado).
+2. Optionally, you can use [GHDL](http://ghdl.free.fr/), which is a cross-platform open-source simulator for VHDL language, to simulate the circuits.
+3. Install *GHDL* and *GTKWave* and add them to your `PATH`
+4. Simulated results can be viewed using [GTKWave](http://gtkwave.sourceforge.net/) which is an open source waveform viewer.
 
 ### 🚀 Simulate
 
 Run `make simulate ARCHNAME=tbname` to run the given testbench and display waveform using GTKWave where `tbname` is any of the testbench names inside the [tb](./src/tb/) directory.
+
+```bash
+$ make simulate ARCHNAME=tb_counter
+>>> cleaning design...
+>>> done...
+>>> analyzing designs...
+>>> simulating design: tb/tb_counter.vhd
+tb/tb_counter.vhd:43:9:@510ns:(assertion note): completed
+>>> showing waveform for: tb/tb_counter.vhd
+
+GTKWave Analyzer v3.3.94 (w)1999-2018 BSI
+...
+```
+
+`100us` stop time is given for simulation by default. Optional `STOPTIME=` argument can be passed to `Makefile` to change this value.
+
+```bash
+make simulate ARCHNAME=tb_counter STOPTIME=1ms
+```
 
 ### 🧪 Check & Analyze
 
@@ -83,11 +147,12 @@ $ make
 
 ## ✔️ To-do
 
+- [ ] Complete the README with all informations and details
 - [ ] Implement test bench for all designs
 - [ ] Comment all designs
     - [ ] Complete descriptions
     - [ ] Explain design decisions
-- [ ] Automate testing and analysis through a `Makefile`
+- [x] Automate testing and analysis through a `Makefile`
 
 ## 📜 License
 

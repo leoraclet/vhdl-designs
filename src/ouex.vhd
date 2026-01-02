@@ -22,7 +22,8 @@ BEGIN
   S1 <= A WHEN B = '0' ELSE
         NOT(A);
 
-  -- The following logic equation is the equivalent of thelogic condition above
+  -- The following logic equation is the equivalent of the logic condition above
   -- S1 <= (A OR B) AND NOT(A AND B);
+
   S2 <= A XOR B;
 END rtl;

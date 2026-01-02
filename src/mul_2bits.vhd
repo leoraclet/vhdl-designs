@@ -1,3 +1,12 @@
+----------------------------------------------------------------------
+--
+-- Design unit:   2-bits mulitplier
+-- File name:     ripple_carry_4bits.vhd
+-- Description:   Multiply two 2-bits numbers and outputs the result
+--                as a 4-bit number
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 

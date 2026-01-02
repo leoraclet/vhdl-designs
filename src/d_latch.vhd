@@ -2,7 +2,7 @@
 --
 -- Design unit:   Synchronous D latch
 -- File name:     d_latch.vhd
--- Description:   .
+-- Description:   Synchronous SET and RESET signals
 --
 ----------------------------------------------------------------------
 

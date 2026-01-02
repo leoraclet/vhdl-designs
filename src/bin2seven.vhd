@@ -51,7 +51,6 @@ BEGIN
     "0111000" WHEN OTHERS;
 
   -- For common anode display
-
   a <= s(6);
   b <= s(5);
   c <= s(4);

@@ -2,7 +2,9 @@
 --
 -- Design unit:   4-bits Ripple Carry Adder
 -- File name:     ripple_carry_4bits.vhd
--- Description:   .
+-- Description:   Adds two binary numbers by connecting multiple full
+--                adders in series, where the carry output from one
+--                adder is the carry input to the next
 --
 ----------------------------------------------------------------------
 

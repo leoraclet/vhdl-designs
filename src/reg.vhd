@@ -2,7 +2,7 @@
 --
 -- Design unit:   Synchronous 8-bit register
 -- File name:     reg.vhd
--- Description:   Simple sequential block
+-- Description:   Simple sequential block used to store 8 bits
 --
 ---------------------------------------------------------------------
 

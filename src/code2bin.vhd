@@ -2,7 +2,8 @@
 --
 -- Design unit:   Decode bit position to number
 -- File name:     code2bin.vhd
--- Description:   .
+-- Description:   Combinatorial block used to retrieve number from
+--                bit position in the input bit vector
 --
 ----------------------------------------------------------------------
 

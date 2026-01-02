@@ -2,7 +2,8 @@
 --
 -- Design unit:   Simple 4-bits adder
 -- File name:     add4.vhd
--- Description:   The circuit =>
+-- Description:   Adds two 4-bits numbers and outputs result as a
+--                4-bits number and a carry.
 --
 ----------------------------------------------------------------------
 

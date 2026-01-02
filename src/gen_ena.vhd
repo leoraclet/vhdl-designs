@@ -1,8 +1,14 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   Arbitrary 32 bits frequency divider
+-- Design unit:   Arbitrary 26 bits frequency divider
 -- File name:     gen_ena.vhd
--- Description:   .
+-- Description:   Divides clocks frequency and outputs a 1Hz clock
+--
+--                This design was thought to be used on a device with
+--                a 50 MHz clock by default, which means you need to
+--                divide the clock by 50 x 10^6 to get a 1 Hz clock.
+--                And it happens you only need 26 bits to represente*
+--                that number
 --
 ----------------------------------------------------------------------
 
@@ -23,7 +29,7 @@ BEGIN
   PROCESS (clkin)
   BEGIN
     IF rising_edge(clkin) THEN
-      IF s = "00000000000000000000100000" THEN -- On choisit ici une valeur de 32, car compter jusqu'� (50 x 10^6) - 1 serait beacuoup trop long
+      IF s = "10111110101111000001111111" THEN -- We choose here the duration of our period: (50 x 10^6) - 1
         s <= "00000000000000000000000000";
       ELSE
         s <= s + 1;

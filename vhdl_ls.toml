@@ -1,4 +1,4 @@
 [libraries]
 common.files = ["src/*.vhd"]
 
-work.files = []
+work.files = ["src/*.vhd"]

@@ -1,8 +1,9 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   Simple 4-bits adder and dubtracter
+-- Design unit:   Simple 4-bits adder and subtractor
 -- File name:     add_sub4.vhd
--- Description:   The circuit =>
+-- Description:   Adds or subtract two 4-bits numbers and outputs result as a
+--                4-bits number and 4 flags.
 --
 ----------------------------------------------------------------------
 

@@ -2,7 +2,8 @@
 --
 -- Design unit:   Simple 16-bits adder
 -- File name:     add16.vhd
--- Description:   The circuit =>
+-- Description:   Adds two 16-bits (2 bytes) numbers and outputs result as a
+--                16-bits number and a carry.
 --
 ----------------------------------------------------------------------
 

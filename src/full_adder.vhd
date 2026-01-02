@@ -1,3 +1,13 @@
+----------------------------------------------------------------------
+--
+-- Design unit:   Full adder
+-- File name:     full_adder.vhd
+-- Description:   Adds three binary inputs: two significant bits
+--                and a carry-in bit, producing a sum and a
+--                carry-out bit as outputs
+--
+----------------------------------------------------------------------
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 

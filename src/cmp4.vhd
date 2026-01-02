@@ -1,8 +1,9 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   4-bit comparator
+-- Design unit:   4-bits comparator
 -- File name:     cmp4.vhd
--- Description:   .
+-- Description:   Compares two 4-bits number, and sets each of the
+--                outputs accordingly.
 --
 ----------------------------------------------------------------------
 

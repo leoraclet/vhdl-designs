@@ -1,24 +1,24 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   .
--- File name:     demi_add.vhd
--- Description:   .
+-- Design unit:   Half adder
+-- File name:     half_add.vhd
+-- Description:   Adds two single-bit binary numbers, producing a sum and a carry output
 --
 ---------------------------------------------------------------------
 
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY demi_add IS
+ENTITY half_add IS
   PORT (
     a     : IN  STD_LOGIC;
     b     : IN  STD_LOGIC;
     r     : OUT STD_LOGIC;
     c_out : OUT STD_LOGIC
   );
-END demi_add;
+END half_add;
 
-ARCHITECTURE rtl OF demi_add IS
+ARCHITECTURE rtl OF half_add IS
 BEGIN
   r     <= a XOR b;
   c_out <= a AND b;

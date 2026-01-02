@@ -2,7 +2,8 @@
 --
 -- Design unit:   Synchronous JK flip-flop
 -- File name:     jk_ff.vhd
--- Description:   Simple sequential block
+-- Description:   Simple sequential block used to store binary
+--                information
 --
 ---------------------------------------------------------------------
 
@@ -17,12 +18,12 @@ ENTITY jk_ff IS
 END jk_ff;
 
 ARCHITECTURE rtl OF jk_ff IS
-  SIGNAL jk        : STD_LOGIC_VECTOR(1 DOWNTO 0);
-  SIGNAL jk_ff_reg : STD_LOGIC := '0'; -- Initialisation de la bascule
-  -- Importante pour la simulation!
+  SIGNAL jk : STD_LOGIC_VECTOR(1 DOWNTO 0);
+  -- Initialization of the flip-flop, important FOR the simulation!
+  SIGNAL jk_ff_reg : STD_LOGIC := '0';
 BEGIN
-  jk <= j & k; -- Concatenation de deux signaux
-  -- pour creer un vecteur de deux bits
+  -- Concatenation of two signals to create a two-bit vector
+  jk <= j & k;
 
   PROCESS (clk)
   BEGIN

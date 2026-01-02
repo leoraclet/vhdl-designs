@@ -1,8 +1,9 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   Computes hamming distance between two 4-bits inputs
+-- Design unit:   Hamming Distance calculator
 -- File name:     dst_hamm.vhd
--- Description:   .
+-- Description:   Combinatorial block used to compute the Hamming
+--                distance between two 4-bits input vectors
 --
 ----------------------------------------------------------------------
 

@@ -2,7 +2,8 @@
 --
 -- Design unit:   4-bits register
 -- File name:     reg_4bits.vhd
--- Description:   .
+-- Description:   Simple sequential block using D Flip-Flop to store
+--                4 bits of information
 --
 ----------------------------------------------------------------------
 

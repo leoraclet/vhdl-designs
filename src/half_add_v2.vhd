@@ -1,24 +1,28 @@
 ----------------------------------------------------------------------
 --
--- Design unit:   .
--- File name:     demi_add_v2.vhd
--- Description:   .
+-- Design unit:   Half adder v2
+-- File name:     half_add_v2.vhd
+-- Description:   Adds two single-bit binary numbers, producing a sum
+--                and a carry output
+--                This version used previously defined circuits
+--                instead of the default AND and XOR gates defined in
+--                the standard library
 --
 ---------------------------------------------------------------------
 
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
-ENTITY demi_add_v2 IS
+ENTITY half_add_v2 IS
   PORT (
     a     : IN  STD_LOGIC;
     b     : IN  STD_LOGIC;
     r     : OUT STD_LOGIC;
     c_out : OUT STD_LOGIC
   );
-END demi_add_v2;
+END half_add_v2;
 
-ARCHITECTURE rtl OF demi_add_v2 IS
+ARCHITECTURE rtl OF half_add_v2 IS
   COMPONENT xor2 IS
     PORT (
       i1 : IN  STD_LOGIC;

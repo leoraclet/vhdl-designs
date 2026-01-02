@@ -1,15 +1,18 @@
+# Shortends
 CC = ghdl
 SIM = gtkwave
 WORKDIR = debug
 QUIET = @
 
+# Optional arguments
 ARCHNAME?= tb_NAME
 STOPTIME?= 100us
 
 # Source files
 VHDL_SOURCES += $(wildcard src/*.vhd)
-# Testbench fiels
-TBS = $(wildcard tb/tb_*.vhd)
+VHDL_SOURCES += $(wildcard src/projects/*.vhd)
+# Testbench files
+TBS = $(wildcard src/tb/tb_*.vhd)
 
 CFLAGS += --warn-binding
 CFLAGS += --warn-no-library # turn off warning on design replace with same name
@@ -18,16 +21,16 @@ CFLAGS += -fexplicit #
 
 .PHONY: all
 all: check analyze
-	@echo ">>> completed..."
+	@echo ">>> Completed..."
 
 .PHONY: check
 check:
-	@echo ">>> check syntax on all designs..."
+	@echo ">>> Check syntax on all designs..."
 	$(QUIET)$(CC) -s $(CFLAGS) $(VHDL_SOURCES) $(TBS)
 
 .PHONY: analyze
 analyze:
-	@echo ">>> analyzing designs..."
+	@echo ">>> Analyzing designs..."
 	$(QUIET)mkdir -p $(WORKDIR)
 	$(QUIET)$(CC) -a $(CFLAGS) --workdir=$(WORKDIR) $(VHDL_SOURCES) $(TBS)
 
@@ -42,8 +45,8 @@ simulate: clean analyze
 
 .PHONY: clean
 clean:
-	@echo ">>> cleaning design..."
+	@echo ">>> Cleaning design..."
 	$(QUIET)ghdl --remove --workdir=$(WORKDIR)
 	$(QUIET)rm -f $(WORKDIR)/*
 	$(QUIET)rm -rf $(WORKDIR)
-	@echo ">>> done..."
+	@echo ">>> Done !"
