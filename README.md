@@ -41,43 +41,51 @@ Some designs might have multiple architecture implementations to show design opt
 
 ## 🧩 Designs
 
-| File                                                     | Design Unit                 | Verified |
-| -------------------------------------------------------- | --------------------------- | -------- |
-| [**`half_add`**](./src/half_add.vhd)                     | Half Adder                  | ...      |
-| [**`full_adder`**](./src/full_adder.vhd)                 | Full Adder                  | ...      |
-| [**`jk_ff`**](./src/jk_ff.vhd)                           | Synchronous JK Flip-Flop    | ...      |
-| [**`d_ff`**](./src/d_ff.vhd)                             | Synchronous D Flip-Flop     | ...      |
-| [**`d_latch`**](./src/d_latch.vhd)                       | Synchronous D Latch         | ...      |
-| [**`ad_ff`**](./src/ad_ff.vhd)                           | Asynchronous D Flip-Flop    | ...      |
-| [**`add4`**](./src/add4.vhd)                             | 4-bits Adder                | ...      |
-| [**`add_sub4`**](./src/add_sub4.vhd)                     | 4-bits Adder & Subtractor   | ...      |
-| [**`add16`**](./src/add16.vhd)                           | 16-bits Adder               | ...      |
-| [**`cmp4`**](./src/cmp4.vhd)                             | 4-bits Comparator           | ...      |
-| [**`bin2seven`**](./src/bin2seven.vhd)                   | Binary to 7 segments        | ...      |
-| [**`code2bin`**](./src/code2bin.vhd)                     | Code to binary              | ...      |
-| [**`cnt4`**](./src/cnt4.vhd)                             | Asynchronous 4-bit counter  | ...      |
-| [**`ripple_carry_4bits`**](./src/ripple_carry_4bits.vhd) | 4-bits Ripple Carry Adder   | ...      |
-| [**`mul_2bits`**](./src/mul_2bits.vhd)                   | 2-bits Multiplier           | ...      |
-| [**`gen_ena`**](./src/gen_ena.vhd)                       | Frequency Divider           | ...      |
-| [**`pri_enc`**](./src/pri_enc.vhd)                       | Priority Encoder            | ...      |
-| [**`reg_4bits`**](./src/reg_4bits.vhd)                   | 4-bits Register             | ...      |
-| [**`pdf_hamm`**](./src/pds_hamm.vhd)                     | Hamming weight calculator   | ...      |
-| [**`dst_hamm`**](./src/dst_hamm.vhd)                     | Hamming Distance calculator | ...      |
-| [**`reg`**](./src/reg.vhd)                               | 8-bits Register             | ...      |
-| ...                                                      | ...                         | ...      |
-
----
-
-> [!WARNING]
-> More to come ...
+| File                                                     | Design Unit                              | Tested | Analyzed |
+| -------------------------------------------------------- | ---------------------------------------- | :----: | :------: |
+| [**`ad_ff`**](./rtl/ad_ff.vhd)                           | Asynchronous D Flip-Flop                 |   ❌    |    ✅     |
+| [**`add_sub4`**](./rtl/add_sub4.vhd)                     | 4-bits Adder & Subtractor                |   ❌    |    ✅     |
+| [**`add16`**](./rtl/add16.vhd)                           | 16-bits Adder                            |   ❌    |    ✅     |
+| [**`add4`**](./rtl/add4.vhd)                             | 4-bits Adder                             |   ❌    |    ✅     |
+| [**`anti_reb`**](./rtl/anti_reb.vhd)                     | De-bouncer                               |   ❌    |    ✅     |
+| [**`bin2code`**](./rtl/bin2code.vhd)                     | 2-bit line decoder                       |   ❌    |    ✅     |
+| [**`bin2seven_eco`**](./rtl/bin2seven_eco.vhd)           | ... with on/off signal                   |   ❌    |    ✅     |
+| [**`bin2seven`**](./rtl/bin2seven.vhd)                   | Binary to 7 segments                     |   ❌    |    ✅     |
+| [**`clk_halve`**](./rtl/clk_halve.vhd)                   | Frequency Halfer                         |   ❌    |    ✅     |
+| [**`cmp4`**](./rtl/cmp4.vhd)                             | 4-bits Comparator                        |   ❌    |    ✅     |
+| [**`cmpt4_bidirena`**](./rtl/cmpt4_bidirena.vhd)         | Bidirectional counter                    |   ❌    |    ✅     |
+| [**`cnt256`**](./src/cnt26.vhd)                          | Synchronous 8-bit bi-directional counter |   ❌    |    ✅     |
+| [**`cnt4`**](./rtl/cnt4.vhd)                             | Synchronous 4-bit counter                |   ❌    |    ✅     |
+| [**`code2bin`**](./rtl/code2bin.vhd)                     | 2-bit line encoder                       |   ❌    |    ✅     |
+| [**`d_ff`**](./rtl/d_ff.vhd)                             | Synchronous D Flip-Flop                  |   ❌    |    ✅     |
+| [**`d_latch`**](./rtl/d_latch.vhd)                       | Synchronous D Latch                      |   ❌    |    ✅     |
+| [**`div10`**](./rtl/div10.vhd)                           | Frequency Divider by 10                  |   ❌    |    ✅     |
+| [**`div2`**](./rtl/div2.vhd)                             | Frequency Divider by 2                   |   ❌    |    ✅     |
+| [**`dst_hamm`**](./rtl/dst_hamm.vhd)                     | Hamming Distance calculator              |   ❌    |    ✅     |
+| [**`full_adder`**](./rtl/full_adder.vhd)                 | Full Adder                               |   ❌    |    ✅     |
+| [**`gen_ena`**](./rtl/gen_ena.vhd)                       | Frequency Divider                        |   ❌    |    ✅     |
+| [**`half_add`**](./rtl/half_add.vhd)                     | Half Adder                               |   ❌    |    ✅     |
+| [**`jk_ff`**](./rtl/jk_ff.vhd)                           | Synchronous JK Flip-Flop                 |   ❌    |    ✅     |
+| [**`mem4x8`**](./rtl/mem4x8.vhd)                         | 4-byte Synchronous Memory                |   ❌    |    ✅     |
+| [**`mul_2bits`**](./rtl/mul_2bits.vhd)                   | 2-bits Multiplier                        |   ❌    |    ✅     |
+| [**`mux2x8`**](./rtl/mux2x8.vhd)                         | Two-channel multiplexer                  |   ❌    |    ✅     |
+| [**`mux4x8`**](./src/mux4x1.vhd)                         | Four-1bit-channel multiplexer            |   ❌    |    ✅     |
+| [**`mux4x8`**](./rtl/mux4x8.vhd)                         | Four-channel multiplexer                 |   ❌    |    ✅     |
+| [**`pdf_hamm`**](./rtl/pds_hamm.vhd)                     | Hamming weight calculator                |   ❌    |    ✅     |
+| [**`pri_enc`**](./rtl/pri_enc.vhd)                       | Priority Encoder                         |   ❌    |    ✅     |
+| [**`reg_4bits`**](./rtl/reg_4bits.vhd)                   | 4-bits Register                          |   ❌    |    ✅     |
+| [**`reg`**](./rtl/reg.vhd)                               | 8-bits Register                          |   ❌    |    ✅     |
+| [**`ripple_carry_4bits`**](./rtl/ripple_carry_4bits.vhd) | 4-bits Ripple Carry Adder                |   ❌    |    ✅     |
+| [**`shift_reg`**](./rtl/shift_reg.vhd)                   | N-bits Shift Register                    |   ❌    |    ✅     |
+| [**`t_ff`**](./rtl/t_ff.vhd)                             | T Flip-Flop                              |   ❌    |    ✅     |
 
 ## 📦 Structure
 
 - **Directories**
 
     - [**`.vscode`**](./.vscode/) - Project specific VSCode settings (formatting and extensions)
-    - [**`src`**](./src/) - VHDL designs and circuits (`.vhd`)
-    - [**`doc`**](./doc/) - Documentation (*on its way ...*)
+    - [**`src`**](./rtl) - VHDL designs and circuits (`.vhd`)
+    - [**`doc`**](./doc/) - Documentation (*on its way, but not yet ...*)
 
 - **Files**
 
@@ -104,7 +112,7 @@ Some designs might have multiple architecture implementations to show design opt
 
 ### 🚀 Simulate
 
-Run `make simulate ARCHNAME=tbname` to run the given testbench and display waveform using GTKWave where `tbname` is any of the testbench names inside the [tb](./src/tb/) directory.
+Run `make simulate ARCHNAME=tbname` to run the given testbench and display waveform using GTKWave where `tbname` is any of the testbench names inside the [tb](./tb/) directory.
 
 ```bash
 $ make simulate ARCHNAME=tb_counter
@@ -147,12 +155,7 @@ $ make
 
 ## ✔️ To-do
 
-- [ ] Complete the README with all informations and details
-- [ ] Implement test bench for all designs
-- [ ] Comment all designs
-    - [ ] Complete descriptions
-    - [ ] Explain design decisions
-- [x] Automate testing and analysis through a `Makefile`
+- [ ] Implement test benches for all designs
 
 ## 📜 License
 

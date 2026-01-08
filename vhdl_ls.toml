@@ -1,4 +1,4 @@
 [libraries]
-common.files = ["src/*.vhd"]
+common.files = ["rtl/*.vhd"]
 
-work.files = ["src/*.vhd"]
+# work.files = ["rtl/*.vhd"]
