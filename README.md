@@ -43,48 +43,49 @@ Some designs might have multiple architecture implementations to show design opt
 
 | File                                                     | Design Unit                              | Tested | Analyzed |
 | -------------------------------------------------------- | ---------------------------------------- | :----: | :------: |
-| [**`ad_ff`**](./rtl/ad_ff.vhd)                           | Asynchronous D Flip-Flop                 |   ❌    |    ✅     |
-| [**`add_sub4`**](./rtl/add_sub4.vhd)                     | 4-bits Adder & Subtractor                |   ❌    |    ✅     |
-| [**`add16`**](./rtl/add16.vhd)                           | 16-bits Adder                            |   ❌    |    ✅     |
-| [**`add4`**](./rtl/add4.vhd)                             | 4-bits Adder                             |   ❌    |    ✅     |
-| [**`anti_reb`**](./rtl/anti_reb.vhd)                     | De-bouncer                               |   ❌    |    ✅     |
-| [**`bin2code`**](./rtl/bin2code.vhd)                     | 2-bit line decoder                       |   ❌    |    ✅     |
-| [**`bin2seven_eco`**](./rtl/bin2seven_eco.vhd)           | ... with on/off signal                   |   ❌    |    ✅     |
-| [**`bin2seven`**](./rtl/bin2seven.vhd)                   | Binary to 7 segments                     |   ❌    |    ✅     |
-| [**`clk_halve`**](./rtl/clk_halve.vhd)                   | Frequency Halfer                         |   ❌    |    ✅     |
-| [**`cmp4`**](./rtl/cmp4.vhd)                             | 4-bits Comparator                        |   ❌    |    ✅     |
-| [**`cmpt4_bidirena`**](./rtl/cmpt4_bidirena.vhd)         | Bidirectional counter                    |   ❌    |    ✅     |
-| [**`cnt256`**](./src/cnt26.vhd)                          | Synchronous 8-bit bi-directional counter |   ❌    |    ✅     |
-| [**`cnt4`**](./rtl/cnt4.vhd)                             | Synchronous 4-bit counter                |   ❌    |    ✅     |
-| [**`code2bin`**](./rtl/code2bin.vhd)                     | 2-bit line encoder                       |   ❌    |    ✅     |
-| [**`d_ff`**](./rtl/d_ff.vhd)                             | Synchronous D Flip-Flop                  |   ❌    |    ✅     |
-| [**`d_latch`**](./rtl/d_latch.vhd)                       | Synchronous D Latch                      |   ❌    |    ✅     |
-| [**`div10`**](./rtl/div10.vhd)                           | Frequency Divider by 10                  |   ❌    |    ✅     |
-| [**`div2`**](./rtl/div2.vhd)                             | Frequency Divider by 2                   |   ❌    |    ✅     |
-| [**`dst_hamm`**](./rtl/dst_hamm.vhd)                     | Hamming Distance calculator              |   ❌    |    ✅     |
-| [**`full_adder`**](./rtl/full_adder.vhd)                 | Full Adder                               |   ❌    |    ✅     |
-| [**`gen_ena`**](./rtl/gen_ena.vhd)                       | Frequency Divider                        |   ❌    |    ✅     |
-| [**`half_add`**](./rtl/half_add.vhd)                     | Half Adder                               |   ❌    |    ✅     |
-| [**`jk_ff`**](./rtl/jk_ff.vhd)                           | Synchronous JK Flip-Flop                 |   ❌    |    ✅     |
-| [**`mem4x8`**](./rtl/mem4x8.vhd)                         | 4-byte Synchronous Memory                |   ❌    |    ✅     |
-| [**`mul_2bits`**](./rtl/mul_2bits.vhd)                   | 2-bits Multiplier                        |   ❌    |    ✅     |
-| [**`mux2x8`**](./rtl/mux2x8.vhd)                         | Two-channel multiplexer                  |   ❌    |    ✅     |
-| [**`mux4x8`**](./src/mux4x1.vhd)                         | Four-1bit-channel multiplexer            |   ❌    |    ✅     |
-| [**`mux4x8`**](./rtl/mux4x8.vhd)                         | Four-channel multiplexer                 |   ❌    |    ✅     |
-| [**`pdf_hamm`**](./rtl/pds_hamm.vhd)                     | Hamming weight calculator                |   ❌    |    ✅     |
-| [**`pri_enc`**](./rtl/pri_enc.vhd)                       | Priority Encoder                         |   ❌    |    ✅     |
-| [**`reg_4bits`**](./rtl/reg_4bits.vhd)                   | 4-bits Register                          |   ❌    |    ✅     |
-| [**`reg`**](./rtl/reg.vhd)                               | 8-bits Register                          |   ❌    |    ✅     |
-| [**`ripple_carry_4bits`**](./rtl/ripple_carry_4bits.vhd) | 4-bits Ripple Carry Adder                |   ❌    |    ✅     |
-| [**`shift_reg`**](./rtl/shift_reg.vhd)                   | N-bits Shift Register                    |   ❌    |    ✅     |
-| [**`t_ff`**](./rtl/t_ff.vhd)                             | T Flip-Flop                              |   ❌    |    ✅     |
+| [**`ad_ff`**](./rtl/ad_ff.vhd)                           | Asynchronous D Flip-Flop                 |   ✗    |    ✓     |
+| [**`add_sub4`**](./rtl/add_sub4.vhd)                     | 4-bits Adder & Subtractor                |   ✗    |    ✓     |
+| [**`add16`**](./rtl/add16.vhd)                           | 16-bits Adder                            |   ✗    |    ✓     |
+| [**`add4`**](./rtl/add4.vhd)                             | 4-bits Adder                             |   ✗    |    ✓     |
+| [**`anti_reb`**](./rtl/anti_reb.vhd)                     | De-bouncer                               |   ✗    |    ✓     |
+| [**`bin2code`**](./rtl/bin2code.vhd)                     | 2-bit line decoder                       |   ✗    |    ✓     |
+| [**`bin2seven_eco`**](./rtl/bin2seven_eco.vhd)           | ... with on/off signal                   |   ✗    |    ✓     |
+| [**`bin2seven`**](./rtl/bin2seven.vhd)                   | Binary to 7 segments                     |   ✗    |    ✓     |
+| [**`clk_halve`**](./rtl/clk_halve.vhd)                   | Frequency Halfer                         |   ✗    |    ✓     |
+| [**`cmp4`**](./rtl/cmp4.vhd)                             | 4-bits Comparator                        |   ✗    |    ✓     |
+| [**`cmpt4_bidirena`**](./rtl/cmpt4_bidirena.vhd)         | Bidirectional counter                    |   ✗    |    ✓     |
+| [**`cnt256`**](./src/cnt26.vhd)                          | Synchronous 8-bit bi-directional counter |   ✗    |    ✓     |
+| [**`cnt4`**](./rtl/cnt4.vhd)                             | Synchronous 4-bit counter                |   ✗    |    ✓     |
+| [**`code2bin`**](./rtl/code2bin.vhd)                     | 2-bit line encoder                       |   ✗    |    ✓     |
+| [**`d_ff`**](./rtl/d_ff.vhd)                             | Synchronous D Flip-Flop                  |   ✗    |    ✓     |
+| [**`d_latch`**](./rtl/d_latch.vhd)                       | Synchronous D Latch                      |   ✗    |    ✓     |
+| [**`div10`**](./rtl/div10.vhd)                           | Frequency Divider by 10                  |   ✗    |    ✓     |
+| [**`div2`**](./rtl/div2.vhd)                             | Frequency Divider by 2                   |   ✗    |    ✓     |
+| [**`dst_hamm`**](./rtl/dst_hamm.vhd)                     | Hamming Distance calculator              |   ✗    |    ✓     |
+| [**`full_adder`**](./rtl/full_adder.vhd)                 | Full Adder                               |   ✗    |    ✓     |
+| [**`gen_ena`**](./rtl/gen_ena.vhd)                       | Frequency Divider                        |   ✗    |    ✓     |
+| [**`half_add`**](./rtl/half_add.vhd)                     | Half Adder                               |   ✗    |    ✓     |
+| [**`jk_ff`**](./rtl/jk_ff.vhd)                           | Synchronous JK Flip-Flop                 |   ✗    |    ✓     |
+| [**`mem4x8`**](./rtl/mem4x8.vhd)                         | 4-byte Synchronous Memory                |   ✗    |    ✓     |
+| [**`mul_2bits`**](./rtl/mul_2bits.vhd)                   | 2-bits Multiplier                        |   ✗    |    ✓     |
+| [**`mux2x8`**](./rtl/mux2x8.vhd)                         | Two-channel multiplexer                  |   ✗    |    ✓     |
+| [**`mux4x8`**](./rtl/mux4x8.vhd)                         | Four-channel multiplexer                 |   ✗    |    ✓     |
+| [**`mux4x8`**](./src/mux4x1.vhd)                         | Four-1bit-channel multiplexer            |   ✗    |    ✓     |
+| [**`pdf_hamm`**](./rtl/pds_hamm.vhd)                     | Hamming weight calculator                |   ✗    |    ✓     |
+| [**`pri_enc`**](./rtl/pri_enc.vhd)                       | Priority Encoder                         |   ✗    |    ✓     |
+| [**`reg_4bits`**](./rtl/reg_4bits.vhd)                   | 4-bits Register                          |   ✗    |    ✓     |
+| [**`reg`**](./rtl/reg.vhd)                               | 8-bits Register                          |   ✗    |    ✓     |
+| [**`ripple_carry_4bits`**](./rtl/ripple_carry_4bits.vhd) | 4-bits Ripple Carry Adder                |   ✗    |    ✓     |
+| [**`shift_reg`**](./rtl/shift_reg.vhd)                   | N-bits Shift Register                    |   ✗    |    ✓     |
+| [**`t_ff`**](./rtl/t_ff.vhd)                             | T Flip-Flop                              |   ✗    |    ✓     |
 
 ## 📦 Structure
 
 - **Directories**
 
     - [**`.vscode`**](./.vscode/) - Project specific VSCode settings (formatting and extensions)
-    - [**`src`**](./rtl) - VHDL designs and circuits (`.vhd`)
+    - [**`rtl`**](./rtl) - VHDL designs and circuits (`.vhd`)
+    - [**`tb`**](./rtl) - VHDL test bench files
     - [**`doc`**](./doc/) - Documentation (*on its way, but not yet ...*)
 
 - **Files**

@@ -1,5 +1,5 @@
 {
-  description = "RISC-V VHDL Development Environment";
+  description = "VHDL Development Environment";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
