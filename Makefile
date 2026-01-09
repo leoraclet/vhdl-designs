@@ -9,10 +9,9 @@ ARCHNAME?= tb_NAME
 STOPTIME?= 100us
 
 # Source files
-VHDL_SOURCES += $(wildcard src/*.vhd)
-VHDL_SOURCES += $(wildcard src/projects/*.vhd)
+VHDL_SOURCES += $(wildcard ./rtl/*.vhd)
 # Testbench files
-TBS = $(wildcard src/tb/tb_*.vhd)
+TBS = $(wildcard ./tb/tb_*.vhd)
 
 CFLAGS += --warn-binding
 CFLAGS += --warn-no-library # turn off warning on design replace with same name
